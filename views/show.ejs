@@ -7,9 +7,15 @@
             <div class="content">
                 <span><%=blog.created.toDateString() %></span>
             </div>
+            <hr class="hh">
             <div class="description">
                 <p><%= blog.body %></p>
             </div>
+            <hr class="hh">
+            <a class="ui orange basic button" href="/blogs/<%= blog._id %>/edit">Edit</a>
+            <form id="deleteForm" method="POST" action="/blogs/<%= blog._id %>?_method=DELETE">
+                <button class="ui red basic button">Delete</button>
+            </form>
         </div>
     </div>
     

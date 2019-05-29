@@ -5,3 +5,12 @@ i.icon {
 .container.main {
     margin-top: 7.0rem;
 }
+
+#deleteForm {
+    display: inline;
+}
+
+.hh {
+    margin-bottom: 20px;
+    color: rgba(30, 30, 30, 0.4);
+}
